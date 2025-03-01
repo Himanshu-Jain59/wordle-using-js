@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="con" id="blur">
+      <p>WORDLE</p>
+      <a href="#" onclick="toggleBlur()" class="i"
+        ><i class="fa-solid fa-lightbulb"></i
+      ></a>
+      <span class="hide">Hint</span>
+
+      <div class="container">
+        <div class="box">
+          <div class="line">
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+          </div>
+          <div class="line">
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+          </div>
+          <div class="line">
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+          </div>
+          <div class="line">
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+          </div>
+          <div class="line">
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+          </div>
+          <div class="line">
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn">
+        <button id="start" class="button">Start</button>
+        <button id="submit" class="button">Submit</button>
+      </div>
+    </div>
+
+    <div id="popup">
+      <div id="description">Please click the start button</div>
+      <a href="#" onclick="toggleBlur()" id="close">Close</a>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
