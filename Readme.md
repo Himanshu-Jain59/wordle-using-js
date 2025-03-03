@@ -1,6 +1,7 @@
 # Wordle Game
 
-This is a simple version of the popular game **Wordle**, implemented with HTML, CSS, and JavaScript. In this game, you will have six attempts to guess a 5-letter word, with feedback provided after each guess to guide you.
+This is a simple version of **Wordle** that fetches a random 5-letter word from an API. In this game, you will have six attempts to guess a 5-letter word, with feedback provided after each guess to guide you.
+.
 
 ![Wordle Game](<./Screenshot%20(196).png>)
 
@@ -26,7 +27,25 @@ This is a simple version of the popular game **Wordle**, implemented with HTML, 
 
 - **HTML**: Markup for the game structure.
 - **CSS**: Styling for the game interface and layout.
-- **JavaScript**: Game logic, including guessing, validation, and feedback.
+- **JavaScript**: Game logic, including guessing, validation, and feedback. Fetches a random word from an external API.
+
+## API Used
+
+This game fetches a random word from the following API:
+
+- **API**: [Random Word API](https://random-word-api.vercel.app/)
+
+  The API provides a random 5 letter word . The game picks the word. This word is used as the target word that players need to guess.
+
+- **Endpoint URL**: `https://random-word-api.vercel.app/api?length=5`
+
+This game uses following API for validation and hint of word :
+
+- **API**: [Dictionary API](https://api.dictionaryapi.dev/api/v2/entries/en/)
+
+  The API checks that the entered 5 letter word is valid or not.It also generates description and synonyms for the hint.
+
+- **Endpoint URL**: `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
 
 ## Installation
 
