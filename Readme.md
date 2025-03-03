@@ -2,6 +2,8 @@
 
 This is a simple version of the popular game **Wordle**, implemented with HTML, CSS, and JavaScript. In this game, you will have six attempts to guess a 5-letter word, with feedback provided after each guess to guide you.
 
+![Wordle Game](<./Screenshot%20(196).png>)
+
 ## How to Play
 
 1. You will be shown a 5-letter word to guess.
